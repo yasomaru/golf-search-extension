@@ -1,0 +1,33 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ballGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景円 -->
+  <circle cx="64" cy="64" r="60" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- ゴルフボール -->
+  <circle cx="45" cy="45" r="15" fill="url(#ballGradient)" stroke="#333333" stroke-width="1"/>
+  <circle cx="45" cy="45" r="12" fill="none" stroke="#333333" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="45" cy="45" r="8" fill="none" stroke="#333333" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- ゴルフフラッグ -->
+  <rect x="75" y="35" width="20" height="12" fill="#ff4444" stroke="#333333" stroke-width="0.5"/>
+  <rect x="75" y="35" width="20" height="2" fill="#ffffff"/>
+  <rect x="75" y="39" width="20" height="2" fill="#ffffff"/>
+  <rect x="75" y="43" width="20" height="2" fill="#ffffff"/>
+  <line x1="95" y1="35" x2="95" y2="65" stroke="#333333" stroke-width="2"/>
+  
+  <!-- フラッグポールの影 -->
+  <line x1="96" y1="35" x2="96" y2="65" stroke="#666666" stroke-width="1" opacity="0.5"/>
+  
+  <!-- ゴルフボールの影 -->
+  <circle cx="47" cy="47" r="15" fill="#000000" opacity="0.1"/>
+</svg>

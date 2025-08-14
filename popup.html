@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Course Search</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏌️ ゴルフ場検索</h1>
+    
+    <div class="search-section">
+      <h2>基本検索</h2>
+      <div class="form-group">
+        <label for="keyword">キーワード:</label>
+        <input type="text" id="keyword" placeholder="ゴルフ場名、地域名など">
+      </div>
+      
+      <div class="form-group">
+        <label for="area">エリア:</label>
+        <select id="area">
+          <option value="">すべて</option>
+          <optgroup label="全地域">
+            <option value="0">全地域</option>
+          </optgroup>
+          <optgroup label="北海道・東北">
+            <option value="101">北海道・東北のすべて</option>
+            <option value="1">北海道</option>
+            <option value="2">青森県</option>
+            <option value="3">岩手県</option>
+            <option value="4">宮城県</option>
+            <option value="5">秋田県</option>
+            <option value="6">山形県</option>
+            <option value="7">福島県</option>
+          </optgroup>
+          <optgroup label="関東">
+            <option value="102">関東のすべて</option>
+            <option value="8">茨城県</option>
+            <option value="9">栃木県</option>
+            <option value="10">群馬県</option>
+            <option value="11">埼玉県</option>
+            <option value="12">千葉県</option>
+            <option value="13">東京都</option>
+            <option value="14">神奈川県</option>
+            <option value="19">山梨県</option>
+            <option value="20">長野県</option>
+            <option value="22">静岡県</option>
+          </optgroup>
+          <optgroup label="北陸">
+            <option value="103">北陸のすべて</option>
+            <option value="15">新潟県</option>
+            <option value="16">富山県</option>
+            <option value="17">石川県</option>
+            <option value="18">福井県</option>
+          </optgroup>
+          <optgroup label="中部">
+            <option value="104">中部のすべて</option>
+            <option value="21">岐阜県</option>
+            <option value="23">愛知県</option>
+            <option value="24">三重県</option>
+          </optgroup>
+          <optgroup label="近畿">
+            <option value="105">近畿のすべて</option>
+            <option value="25">滋賀県</option>
+            <option value="26">京都府</option>
+            <option value="27">大阪府</option>
+            <option value="28">兵庫県</option>
+            <option value="29">奈良県</option>
+            <option value="30">和歌山県</option>
+          </optgroup>
+          <optgroup label="中国">
+            <option value="106">中国のすべて</option>
+            <option value="31">鳥取県</option>
+            <option value="32">島根県</option>
+            <option value="33">岡山県</option>
+            <option value="34">広島県</option>
+            <option value="35">山口県</option>
+          </optgroup>
+          <optgroup label="四国">
+            <option value="107">四国のすべて</option>
+            <option value="36">徳島県</option>
+            <option value="37">香川県</option>
+            <option value="38">愛媛県</option>
+            <option value="39">高知県</option>
+          </optgroup>
+          <optgroup label="九州・沖縄">
+            <option value="108">九州・沖縄のすべて</option>
+            <option value="40">福岡県</option>
+            <option value="41">佐賀県</option>
+            <option value="42">長崎県</option>
+            <option value="43">熊本県</option>
+            <option value="44">大分県</option>
+            <option value="45">宮崎県</option>
+            <option value="46">鹿児島県</option>
+            <option value="47">沖縄県</option>
+          </optgroup>
+          <optgroup label="海外">
+            <option value="109">海外</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+
+
+
+    <div class="button-group">
+      <button id="searchBtn" class="primary-btn">検索</button>
+      <button id="clearBtn" class="secondary-btn">クリア</button>
+    </div>
+    
+    <div class="settings-link">
+      <a href="#" id="openSettings">⚙️ 設定</a>
+    </div>
+
+    <div id="results" class="results-section">
+      <h3>検索結果</h3>
+      <div id="resultsList" class="results-list"></div>
+      <div id="loading" class="loading" style="display: none;">検索中...</div>
+      <div id="noResults" class="no-results" style="display: none;">条件に合うゴルフ場が見つかりませんでした。</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
